@@ -6,9 +6,9 @@ export default {
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  /*router: {
-    base: '/Raginwald.github.io/'
-  },*/
+  router: {
+    base: '/raginwald.github.io/'
+  },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
