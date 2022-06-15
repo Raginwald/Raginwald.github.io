@@ -361,7 +361,6 @@ $footerHeight: 11vh;
     margin-top: 140px;
     margin-left: 10px;
   }
-
 }
 
 </style>
