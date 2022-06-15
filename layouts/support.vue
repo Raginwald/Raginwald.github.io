@@ -26,7 +26,7 @@
     </v-navigation-drawer>
 
     <v-main>
-      <v-container fluid>
+      <v-container fluid class="px-0">
         <Nuxt />
       </v-container>
     </v-main>
