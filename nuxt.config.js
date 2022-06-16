@@ -1,11 +1,5 @@
 import colors from 'vuetify/es5/util/colors'
 
-// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-//   router: {
-//     base: '/raginwald.github.io/'
-//   }
-// } : {}
-
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
@@ -19,8 +13,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - RaginwaldGithubIo',
-    title: 'RaginwaldGithubIo',
+    titleTemplate: '%s - Raginwald.github.io',
+    title: 'Raginwald.github.io',
     htmlAttrs: {
       lang: 'en'
     },
