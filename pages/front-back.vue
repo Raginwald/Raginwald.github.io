@@ -28,15 +28,15 @@
             <!-- L'image d'écran -->
             <div class="screen">
               <!-- La photo du site de O'clock -->
-              <v-img v-if="step >= 11" src="/front-back/oclock.png" />
+              <v-img v-if="step >= 11" :src="require('/static/front-back/oclock.png')" />
 
               <!-- Le contenu de l'écran avant d'afficher la photo du site de O'clock -->
               <div v-else class="screenNavigators">
                 <!-- Icones navigateurs -->
                 <v-row>
-                  <v-col cols="4"><v-img width="7em" src="/front-back/chrome.png" class="mb-5" /></v-col>
-                  <v-col cols="4"><v-img width="7em" src="/front-back/firefox.png" class="mb-5" /></v-col>
-                  <v-col cols="4"><v-img width="7em" src="/front-back/internet-explorer.png" class="mb-5" /></v-col>
+                  <v-col cols="4"><v-img width="7em" :src="require('/static/front-back/chrome.png')" class="mb-5" /></v-col>
+                  <v-col cols="4"><v-img width="7em" :src="require('/static/front-back/firefox.png')" class="mb-5" /></v-col>
+                  <v-col cols="4"><v-img width="7em" :src="require('/static/front-back/internet-explorer.png')" class="mb-5" /></v-col>
                 </v-row>
 
                 <!-- Input URL Readonly -->
@@ -80,7 +80,7 @@
           <!-- Colonne Apache -->
           <v-col cols="2" class="offset-1">
             <div class="serverElement apache" :class="serverColorCircle(3, 10)">
-              <v-img src="/front-back/apache.png" contain v-bind="attrs" v-on="on" />
+              <v-img :src="require('/static/front-back/apache.png')" contain v-bind="attrs" v-on="on" />
 
               <div v-if="step >= 3" class="tooltipStyle d-inline-block mt-3">
                 Apache reçoit la requête et cherche les fichiers liés à la page demandée
@@ -111,7 +111,7 @@
           <!-- Colonne PHP -->
           <v-col cols="2">
             <div class="serverElement php" :class="serverColorCircle(5, 9)">
-              <v-img src="/front-back/php.png" contain v-bind="attrs" v-on="on" />
+              <v-img :src="require('/static/front-back/php.png')" contain v-bind="attrs" v-on="on" />
 
               <div v-if="step >= 5" class="tooltipStyle d-inline-block mt-3">
                 PHP va chercher toutes les infos nécessaire pour construire le HTML/CSS/JS
@@ -142,7 +142,7 @@
           <!-- Colonne BDD -->
           <v-col cols="2">
             <div class="serverElement database" :class="serverColorCircle(7, 8)">
-              <v-img src="/front-back/database.png" contain v-bind="attrs" v-on="on" />
+              <v-img :src="require('/static/front-back/database.png')" contain v-bind="attrs" v-on="on" />
 
               <div v-if="step >= 7" class="tooltipStyle d-inline-block mt-3">
                 La BDD traite la demande
