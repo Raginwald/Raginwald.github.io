@@ -1,14 +1,21 @@
 import colors from 'vuetify/es5/util/colors'
 
+// const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+//   router: {
+//     base: '/raginwald.github.io/'
+//   }
+// } : {}
+
 export default {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  /*router: {
-    base: '/raginwald.github.io/'
-  },*/
+
+  // router: {
+  //   base: '/raginwald.github.io/'
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
