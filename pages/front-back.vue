@@ -169,7 +169,7 @@
 <script>
 export default {
   layout: "support",
-  name: "InspirePage",
+  name: "FrontBackPage",
   data: function () {
     return {
       step: 0,
