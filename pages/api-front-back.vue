@@ -9,7 +9,7 @@
 
       <v-row>
         <v-col cols="6">
-          <h1>LA SALLE (le front-end) {{step}}</h1>
+          <h1>LA SALLE (le front-end)</h1>
           <h3>Les clients ont un besoin : ils doivent grailler</h3>
         </v-col>
 
