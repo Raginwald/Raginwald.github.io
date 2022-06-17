@@ -1,16 +1,24 @@
 <template>
   <div id="frontBack" class="text-center">
-    <v-row id="header">
-      <v-col cols="6">
-        <h1>CLIENT</h1>
-        <h3>Le client représente le navigateur du client</h3>
-      </v-col>
+    <div id="header">
+      <v-row class="big-title">
+        <v-col cols="12">
+          <h1>Communication entre Client et Serveur</h1>
+        </v-col>
+      </v-row>
 
-      <v-col cols="6" class="backSide">
-        <h1>SERVEUR</h1>
+      <v-row>
+        <v-col cols="6">
+          <h1>CLIENT</h1>
+        <h3>Le client représente le navigateur du client</h3>
+        </v-col>
+
+        <v-col cols="6" class="backSide">
+          <h1>SERVEUR</h1>
         <h3>Le serveur représente la machine qui héberge les pages du site visité</h3>
-      </v-col>
-    </v-row>
+        </v-col>
+      </v-row>
+    </div>
 
     <v-row id="main">
       <!-- Coté FRONT -->
@@ -168,6 +176,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "Front → Back"
+    };
+  },
   layout: "support",
   name: "FrontBackPage",
   data: function () {
@@ -360,6 +373,10 @@ $footerHeight: 11vh;
   .tooltipStep11 {
     margin-top: 140px;
     margin-left: 10px;
+  }
+
+  .big-title {
+    background-color: #000;
   }
 }
 

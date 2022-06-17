@@ -1,16 +1,24 @@
 <template>
   <div id="frontBack" class="text-center">
-    <v-row id="header">
-      <v-col cols="6">
-        <h1>LA SALLE (le front-end) {{step}}</h1>
-        <h3>Les clients ont un besoin : ils doivent grailler</h3>
-      </v-col>
+    <div id="header">
+      <v-row class="big-title">
+        <v-col cols="12">
+          <h1>API : Communication entre le FrontEnd et le BackEnd → Analogie Restaurant</h1>
+        </v-col>
+      </v-row>
 
-      <v-col cols="6" class="backSide">
-        <h1>LA CUISINE (le back-end)</h1>
-        <h3>En cuisine, tout est mis en oeuvre pour répondre aux besoins des clients</h3>
-      </v-col>
-    </v-row>
+      <v-row>
+        <v-col cols="6">
+          <h1>LA SALLE (le front-end) {{step}}</h1>
+          <h3>Les clients ont un besoin : ils doivent grailler</h3>
+        </v-col>
+
+        <v-col cols="6" class="backSide">
+          <h1>LA CUISINE (le back-end)</h1>
+          <h3>En cuisine, tout est mis en oeuvre pour répondre aux besoins des clients</h3>
+        </v-col>
+      </v-row>
+    </div>
 
     <v-row id="main">
       <!-- Coté FRONT -->
@@ -89,6 +97,11 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: "API : Front → Back"
+    };
+  },
   layout: "support",
   name: "ApiFrontBackPage",
   data: function () {
@@ -412,6 +425,10 @@ $footerHeight: 11vh;
 
   #description {
     font-size: 12px;
+  }
+
+  .big-title {
+    background-color: #000;
   }
 }
 

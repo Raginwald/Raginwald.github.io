@@ -1,7 +1,7 @@
 <template>
   <v-app dark>
     <v-main>
-      <v-container fluid class="pl-0">
+      <v-container fluid class="px-0">
         <Nuxt />
       </v-container>
     </v-main>
@@ -34,6 +34,6 @@ export default {
 
 <style lang="scss">
 html {
-  overflow: auto;
+  overflow: hidden;
 }
 </style>

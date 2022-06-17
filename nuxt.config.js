@@ -13,7 +13,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: '%s - Raginwald.github.io',
+    titleTemplate: "%s - O'clock Raginwald",
     title: 'Raginwald.github.io',
     htmlAttrs: {
       lang: 'en'
