@@ -246,8 +246,8 @@ export default {
 
 <style lang="scss">
 
-$headerHeight: 15vh;
-$descriptionHeight: 20vh;
+$headerHeight: 20vh;
+$descriptionHeight: 18vh;
 $footerHeight: 11vh;
 
 #frontBack {
@@ -326,7 +326,7 @@ $footerHeight: 11vh;
     }
 
     .ham {
-      top: -4.55vw;
+      top: -4.6vw;
     }
 
     .hamInFridge {
